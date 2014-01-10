@@ -39,10 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfiguracionFabrica.cs" />
     <Compile Include="DividirNumeros.cs" />
-    <Compile Include="Fabrica.cs" />
     <Compile Include="IOperaciones.cs" />
     <Compile Include="MultiplicarNumeros.cs" />
+    <Compile Include="OperacionFabrica.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestarNumeros.cs" />
     <Compile Include="SumarNumeros.cs" />

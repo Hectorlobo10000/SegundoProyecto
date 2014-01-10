@@ -16,8 +16,10 @@ namespace SegundaConsola
             Console.WriteLine("Ingrese segundo numero: ");
             int segundoNumero = Convert.ToInt32(Console.ReadLine());
 
-            Fabrica.CrearOperacion(operador);
-            
+            OperacionFabrica fabrica = ConfiguracionFabrica.ObtenerFabrica();
+            IOperaciones operacion = fabrica.CrearOperacion(operador);
+
+            Console.WriteLine("El resultado es: " + operacion.Operar(primerNumero, segundoNumero));
             Console.ReadKey();
         }
     }
